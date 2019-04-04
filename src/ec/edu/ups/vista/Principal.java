@@ -5,10 +5,25 @@
  */
 package ec.edu.ups.vista;
 
+import ec.edu.ups.clases.Estudiante;
+
 /**
  *
  * @author Darwin
  */
 public class Principal {
+    
+    public static void main(String[] args){
+        
+        System.out.println("Iniciando programa de Registro de Calificaciones");
+        
+        Estudiante est = new Estudiante();
+        
+        //String nombre = est.setNombre("Esteban");
+        
+        
+        
+        
+    }
     
 }
