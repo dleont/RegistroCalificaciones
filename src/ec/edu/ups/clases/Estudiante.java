@@ -9,8 +9,16 @@ package ec.edu.ups.clases;
  *
  * @author Darwin
  */
-public class Estudiante {
+public class Estudiante extends Persona{
+
     private Carrera carrera;
-   
-    
+
+    public Carrera getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(Carrera carrera) {
+        this.carrera = carrera;
+    }
+
 }

@@ -10,8 +10,29 @@ package ec.edu.ups.clases;
  * @author Darwin
  */
 public class Grupo {
+
     private int codigo;
     private String nombre;
     private int cupo;
-    
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setCupo(int codigo) {
+        this.cupo = cupo;
+    }
+
 }
