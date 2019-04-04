@@ -10,5 +10,8 @@ package ec.edu.ups.clases;
  * @author Darwin
  */
 public class Grupo {
+    private int codigo;
+    private String nombre;
+    private int cupo;
     
 }

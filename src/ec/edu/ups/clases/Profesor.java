@@ -11,5 +11,8 @@ package ec.edu.ups.clases;
  * @author Darwin
  */
 public class Profesor {
+    private String titulo;
+    private double salario;
+    private String cargo;
     
 }

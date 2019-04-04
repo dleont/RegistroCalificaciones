@@ -10,5 +10,7 @@ package ec.edu.ups.clases;
  * @author Darwin
  */
 public class Estudiante {
+    private Carrera carrera;
+   
     
 }

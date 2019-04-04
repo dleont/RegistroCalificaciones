@@ -5,10 +5,19 @@
  */
 package ec.edu.ups.clases;
 
+import java.util.List;
+
 /**
  *
  * @author Darwin
  */
 public class Carrera {
+    private int codigo;
+    private String nombre;
+    private List<Materia>materias;
+    private int numSemestres;
+    private int numEstudiantes;
+    private String titulo;
+    
     
 }

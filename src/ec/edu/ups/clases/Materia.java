@@ -10,5 +10,12 @@ package ec.edu.ups.clases;
  * @author Darwin
  */
 public class Materia {
+    private int codigo;
+    private String nombre;
+    private int numCreditos;
+    private int numHoras;
+    private int nivel;
+    private Grupo grupo;
+    private Profesor profesor;
     
 }
