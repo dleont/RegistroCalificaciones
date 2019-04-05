@@ -11,7 +11,7 @@ package ec.edu.ups.clases;
  */
 public class Estudiante extends Persona{
 
-    private Carrera carrera;
+    private Carrera carrera; 
 
     public Carrera getCarrera() {
         return carrera;
@@ -20,5 +20,7 @@ public class Estudiante extends Persona{
     public void setCarrera(Carrera carrera) {
         this.carrera = carrera;
     }
+
+    
 
 }
