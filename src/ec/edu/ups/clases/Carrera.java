@@ -68,4 +68,16 @@ public class Carrera {
         this.titulo = titulo;
     }
 
+    /**
+     * Metodo to String combierte un objeto en cadena de texto
+     * @return carrera 
+     */
+    @Override
+    public String toString() {
+        return "Carrera{ " + "Codigo= " + codigo + ", Nombre= " + nombre + ", Materias= " + materias + 
+                ", Numero de Semestres= " + numSemestres + ", Numero de Estudiantes=" + numEstudiantes + ", Titulo=" + titulo + '}';
+    }
+    
+    
+
 }

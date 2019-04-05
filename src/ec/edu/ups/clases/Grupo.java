@@ -35,4 +35,16 @@ public class Grupo {
         this.cupo = cupo;
     }
 
+    /**
+     * metodo combierte un objeto en cadena de texto
+     * @return grupo
+     */
+    @Override
+    public String toString() {
+        return "Grupo{ " + "Codigo= " + codigo + ", Nombre= " + nombre + ", Cupo= " + cupo + '}';
+    }
+ 
+    
+    
+    
 }

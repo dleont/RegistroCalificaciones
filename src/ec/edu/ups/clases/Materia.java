@@ -75,4 +75,14 @@ public class Materia {
         this.profesor = profesor;
     }
 
+    /**
+     * metodo regresa un objeto en forma de cadena de texto
+     * @return materia
+     */
+    @Override
+    public String toString() {
+        return "Materia{ " + "Codigo= " + codigo + ", Nombre= " + nombre + ", Numero de Creditos= " + numCreditos + ", Numero de Horas=" + numHoras
+                + ", Nivel= " + nivel + ", Grupo= " + grupo + ", Profesor= " + profesor + '}';
+    }
+
 }
