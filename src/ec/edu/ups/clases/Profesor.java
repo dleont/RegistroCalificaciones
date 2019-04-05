@@ -9,30 +9,58 @@ package ec.edu.ups.clases;
  *
  * @author Darwin
  */
-public class Profesor {
+public class Profesor extends Persona{
 
     private String titulo;
     private double salario;
     private String cargo;
+    
+    public Profesor(){
+        
+    }
 
+    public Profesor(int codigo) {
+        super(codigo);
+    }
+
+    public Profesor(int codigo, String nombre, String cedula) {
+        super(codigo, nombre, cedula);
+    }
+
+    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
+        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
+        this.titulo = titulo;
+        this.salario = salario;
+        this.cargo = cargo;
+    }
+
+    
+   //set's
     public void setTitulo(String titulo) {
         this.titulo = titulo;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
-
-    public double getSalario() {
-        return salario;
     }
 
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+    
+    //get's
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+    
+    public String getCargo(){
+        return cargo;
+    }
+
+   
 
 }
