@@ -5,18 +5,33 @@
  */
 package ec.edu.ups.clases;
 
+import java.util.List;
+
 /**
  *
  * @author Darwin
  */
-public class RegistroCalificacion {
+public class HistorialCalificacionEstudiante {
 
     private int codigo;
     private int aprovechamiento1;
     private int exmanen1;
     private int aprovechamiento2;
     private int examne2;
-    private Estudiante estudiante;
+    //private Estudiante estudiante;
+     
+    List<Estudiante>estudiante;
+    
+    
+    public HistorialCalificacionEstudiante(int codigo, Estudiante estudiante){
+        List<Estudiante>estudiantes = null;
+        
+    }
+     
+    /**
+    public void agregarEstudiante(int codigo, Carrera carrera){
+      estudiante.add(002, estudiante());
+    }**/
 
     public int getCodigo() {
         return codigo;
@@ -58,12 +73,8 @@ public class RegistroCalificacion {
         this.examne2 = examne2;
     }
 
-    public Estudiante getEstudiante() {
-        return estudiante;
-    }
-
-    public void setEstudiante(Estudiante estudiante) {
-        this.estudiante = estudiante;
-    }
+   
+    
+    //crear lista con el metodo agregar... para adanestudiante : materia►notas
 
 }

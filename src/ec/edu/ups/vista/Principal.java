@@ -5,7 +5,12 @@
  */
 package ec.edu.ups.vista;
 
+import ec.edu.ups.clases.Carrera;
 import ec.edu.ups.clases.Estudiante;
+import ec.edu.ups.clases.Grupo;
+import ec.edu.ups.clases.Materia;
+import ec.edu.ups.clases.Persona;
+import ec.edu.ups.clases.Profesor;
 import ec.edu.ups.clases.Sede;
 
 /**
@@ -19,7 +24,7 @@ public class Principal {
         System.out.println("Iniciando programa de Registro de Calificaciones");
         
         Estudiante est = new Estudiante();
-        
+        /**
         //asignamos valores a los atributos de la clase Estudiante y Perosna
         est.setCodigo(1);
         est.setNombre("juan quispe");
@@ -38,7 +43,42 @@ public class Principal {
         System.out.println("Telefono: "+est.getTelefono());
         System.out.println("Correo: "+est.getCorreo());
         System.out.println("Sede: "+est.getSede());
-        //System.out.println("Carrera: "est.getCarrera());
+        //System.out.println("Carrera: "est.getCarrera());**/
+        
+        //instanciamos mediante un constructor y no es necesario setiar; asignamos valores directamente
+        //(crear constructoren la clase instanciada)
+        Sede cuenca = new Sede(1, "Sede Cuenca", "Calle vieja", "777123");
+        
+        Carrera computacion = new Carrera(001, "Computacion", 10, 40, "Ing. Ciencias de la computacion");
+        Carrera electronica = new Carrera(002, "Electronica", 10, 35, "Ing. Electronico");
+        Carrera telematica = new Carrera(003, "Telematica", 10, 40, "Ing. en Telematica");
+        
+        Materia calculoVa = new Materia(004, "Calculo de una Variable", 3, 240, 1);
+        Materia mateAvan = new Materia(006, "Matematicas Avanzadas en Ingeniería", 3, 160, 3);
+        Materia electro = new Materia(007, "Electronica", 3, 120, 3);
+        Materia sistOper = new Materia(8, "Sistemas Operativos", 3, 160, 2);
+        Materia ecuaciones = new Materia(9, "Ecaciones Diferenciales", 3, 160, 2);
+        Materia prograApli = new Materia(010, "Programacion Aplicada", 3, 240, 3);
+        
+        //2 profesores
+        Persona profe1 = new Profesor("Ing. en Sistemas", 1500, "profesor", 011, "Andrea Plaza", "0102551448", "09665412872", "El vergel", "pandrea@ups.edu.ec");
+        Persona profe2 = new Profesor("Ing. en Telecomunicacion", 1200, "Dir. carrera", 012, "Pedro Songor", "01154851448", "0954871458", "Miraflores", "psongor@ups.edu.ec");
+        
+        
+        //4 esttidiantes
+        Persona est1 = new Persona(013, "Esteban Barrera", "0105884847", "0963225414", "Baños", "ebarrera@est.ups.edu.ec");
+        Persona est2 = new Persona(014, "Cristian Jacome", "0105884557", "0952144875", "Checa", "cjacome@est.ups.edu.ec");
+        Persona est3 = new Persona(015, "Brayan Barbecho", "0156998554", "0985215487", "Cuenca", "bbarcbecho@est.ups.edu.ec");
+       Persona est4 = new Persona(016, "Esteban Quinde", "0105884847", "0954216598", "Deleg", "equinde@est.ups.edu.ec");
+       
+        //2 grupos
+        Grupo grup1 = new Grupo(17, "Grupo 1", 40);
+        Grupo grup2 = new Grupo(18, "Grupo 2", 35);
+        
+        // agregar objetos a los objetos
+        //cuenca.
+        
+       
     }
     
 }

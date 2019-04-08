@@ -18,6 +18,19 @@ public class Materia {
     private int nivel;
     private Grupo grupo;
     private Profesor profesor;
+    
+    public Materia(){
+        
+    }
+
+    public Materia(int codigo, String nombre, int numCreditos, int numHoras, int nivel) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.numCreditos = numCreditos;
+        this.numHoras = numHoras;
+        this.nivel = nivel;
+    }
+    
 
     public int getCodigo() {
         return codigo;

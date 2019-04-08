@@ -13,6 +13,8 @@ public class Estudiante extends Persona {
 
     private Carrera carrera;
 
+    
+    //metodos:constrcutores
     public Estudiante() { 
     }
     
@@ -26,9 +28,9 @@ public class Estudiante extends Persona {
     
     //firma de dato: tipos de datos y orden de los mismos
 
-    public Estudiante(Carrera carrera, int codigo, String nombre, String cedula, String telefono, String direccion, String correo, Sede sede) {
-        super(codigo, nombre, cedula, telefono, direccion, correo, sede);
-        this.carrera = carrera;
+    public Estudiante( int codigo, String nombre, String cedula, String telefono, String direccion, String correo) {
+        super(codigo, nombre, cedula, telefono, direccion, correo);
+        
     }
     
     
