@@ -32,7 +32,10 @@ public class Carrera {
         this.titulo = titulo;
     }
     
-    
+    //metodo agregar materia a las carreras
+    public void agregarMateria(Materia materia){
+        materias.add(materia);
+    }
 
     public int getCodigo() {
         return codigo;

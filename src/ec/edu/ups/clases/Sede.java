@@ -29,6 +29,11 @@ public class Sede {
         this.direccion = direccion;
         this.telefono = telefono;
     }
+    
+    //agregar carreras a la sede
+    public void agregarCarrera(Carrera carrera){
+       carreras.add(carrera);
+    }
 
     public int getCodigo() {
         return codigo;

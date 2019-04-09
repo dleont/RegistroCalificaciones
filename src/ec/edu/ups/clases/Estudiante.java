@@ -5,6 +5,8 @@
  */
 package ec.edu.ups.clases;
 
+import java.util.List;
+
 /**
  *
  * @author Darwin
@@ -12,28 +14,30 @@ package ec.edu.ups.clases;
 public class Estudiante extends Persona {
 
     private Carrera carrera;
+    List<HistorialCalificacionEstudiante> notas;
 
-    
     //metodos:constrcutores
-    public Estudiante() { 
+    public Estudiante() {
     }
-    
-    public Estudiante(int codigo){
+
+    public Estudiante(int codigo) {
         super(codigo);
     }
 
     public Estudiante(int codigo, String nombre, String cedula) {
         super(codigo, nombre, cedula);
     }
-    
-    //firma de dato: tipos de datos y orden de los mismos
 
-    public Estudiante( int codigo, String nombre, String cedula, String telefono, String direccion, String correo) {
+    //firma de dato: tipos de datos y orden de los mismos
+    public Estudiante(int codigo, String nombre, String cedula, String telefono, String direccion, String correo) {
         super(codigo, nombre, cedula, telefono, direccion, correo);
-        
+
     }
-    
-    
+
+    //metodo agrgar notas al estufiste
+    public void agregarCalificacionEst(HistorialCalificacionEstudiante nota) {
+        notas.add(nota);
+    }
 
     public Carrera getCarrera() {
         return carrera;

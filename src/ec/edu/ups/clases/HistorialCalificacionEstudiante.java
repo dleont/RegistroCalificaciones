@@ -15,19 +15,19 @@ public class HistorialCalificacionEstudiante {
 
     private int codigo;
     private int aprovechamiento1;
-    private int exmanen1;
+    private int examen1;
     private int aprovechamiento2;
-    private int examne2;
-    //private Estudiante estudiante;
-     
-    List<Estudiante>estudiante;
+    private int examen2;
+    private String materia;
     
-    
-    public HistorialCalificacionEstudiante(int codigo, Estudiante estudiante){
-        List<Estudiante>estudiantes = null;
-        
+    public HistorialCalificacionEstudiante(int aprovechamiento1, int examen1, int aprovechamiento2, int examen2, String materia) {
+        this.aprovechamiento1 = aprovechamiento1;
+        this.examen1 = examen1;
+        this.aprovechamiento2 = aprovechamiento2;
+        this.examen2 = examen2;
+        this.materia = materia;
     }
-     
+    
     /**
     public void agregarEstudiante(int codigo, Carrera carrera){
       estudiante.add(002, estudiante());
@@ -49,12 +49,12 @@ public class HistorialCalificacionEstudiante {
         this.aprovechamiento1 = aprovechamiento1;
     }
 
-    public int getExmanen1() {
-        return exmanen1;
+    public int getExamen1() {
+        return examen1;
     }
 
-    public void setExmanen1(int exmanen1) {
-        this.exmanen1 = exmanen1;
+    public void setExamen1(int examen1) {
+        this.examen1 = examen1;
     }
 
     public int getAprovechamiento2() {
@@ -65,12 +65,12 @@ public class HistorialCalificacionEstudiante {
         this.aprovechamiento2 = aprovechamiento2;
     }
 
-    public int getExamne2() {
-        return examne2;
+    public int getExamen2() {
+        return examen2;
     }
 
-    public void setExamne2(int examne2) {
-        this.examne2 = examne2;
+    public void setExamen2(int examen2) {
+        this.examen2 = examen2;
     }
 
    
